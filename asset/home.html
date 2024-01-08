@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaker vaHa</title>
+
+    <!-- link Favicon  -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+    <!-- link Box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link font awesone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- link HTML-slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- link HTML-slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./Sass/style.css" />
+    <link rel="stylesheet" href="./Sass/modal.css" />
+    <link rel="stylesheet" href="./Sass/Cart.css" />
+
+    <!-- link JS -->
+    <script defer src="./JS/main.js"></script>
+    <script defer src="./JS/Login.js"></script>
+    <script defer src="./JS/Cart.js"></script>
+    <script defer src="./JS/Shopping Cart.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <!-- HEADER -->
+      <div class="header__bg">
+        <header class="header">
+          <!-- header left -->
+          <span class="header__logo">
+            <a class="header__toggle" id="menu">
+              <i class="bx bxs-grid-alt"></i>
+            </a>
+          </span>
+          <span class="header__center">
+            <a href="#"
+              ><img
+                class="header__logo-img"
+                src="./img/favicon.png"
+                alt="header logo"
+            /></a>
+            <a href="#" class="header__logo-title">SNEAKERS</a>
+          </span>
+
+          <!-- header right -->
+          <div class="header__right">
+            <ul class="header__nav" id="nav__show">
+              <li><a class="header__nav-link" href="#Home">Home</a></li>
+              <li><a class="header__nav-link" href="#Featured">Featured</a></li>
+              <li><a class="header__nav-link" href="#Women">Women</a></li>
+              <li><a class="header__nav-link" href="#Men">Men</a></li>
+              <!-- <li><a class="header__nav-link" href="#Shop">Shop</a></li> -->
+              <li>
+                <a class="header__nav-link" href="#Login" id="login">
+                  <i class="bx bxs-user"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- shop card -->
+            <div class="header__card" id="showCart">
+              <i style="position: relative" class="bx bxs-shopping-bag"></i>
+              <div
+                style="
+                  position: absolute;
+                  top: 12px;
+                  right: 16px;
+                  font-size: 14px;
+                  background: red;
+                  border-radius: 50%;
+                  width: 18px;
+                  height: 18px;
+                  color: #fff;
+                  text-align: center;
+                "
+                class="total-number"
+              >
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- slider  -->
+      <div id="Home" class="slider__show">
+        <!-- slide 1 -->
+        <div class="slider">
+          <!-- slider left -->
+          <div class="slider__left">
+            <h3 class="slider__left-title">NIKE SPORT SHOSE</h3>
+            <h1 class="slider__left-titleMax1">
+              YEEZY BOOT<br /><span class="auto-type"> </span>
+            </h1>
+            <p class="slider__left-discription">
+              Explore the new collection of sneaker
+            </p>
+            <button class="slider__left-btn">Explore now</button>
+          </div>
+
+          <!-- slider right -->
+          <div class="slider__right">
+            <div class="slider__right-border"></div>
+            <img
+              src="/asset/img/imghome.png"
+              alt=""
+              class="slider__right-img"
+            />
+          </div>
+        </div>
+
+        <!-- slide 2 -->
+        <div class="slider">
+          <!-- slider left -->
+          <div class="slider__left">
+            <h3 class="slider__left-title">SNEAKER COMPANY</h3>
+            <h1 class="slider__left-titleMax2">
+              Fall Limited <br /><span class="auto__text-slide2"></span>
+            </h1>
+            <p class="slider__left-discription">
+              Leather free <br />
+              • Trainers <br />
+              • Mesh and polyurethane <br />
+              • Worn-out effect <br />
+            </p>
+            <button class="slider__left-btn">Explore now</button>
+          </div>
+
+          <!-- slider right -->
+          <div class="slider__right">
+            <div class="slider__right-borderSlide2"></div>
+            <img
+              src="/asset/img/slide 3.png"
+              alt=""
+              class="slider__right-imgSlide2"
+            />
+          </div>
+        </div>
+
+        <!-- slide 3 -->
+        <div class="slider">
+          <!-- slider left -->
+          <div class="slider__left">
+            <h3 class="slider__left-title">Balenciaga</h3>
+            <h1 class="slider__left-titleMax3">
+              MEN RUNNER <br />
+              <span class="auto__textSlide3"></span>
+            </h1>
+            <p class="slider__left-discription">
+              Runner logo printed on exterior <br />
+              • Balenciaga logo embroidered on the tongue <br />
+              • Balenciaga logo at the back of the heel <br />
+            </p>
+            <button class="slider__left-btn">Explore now</button>
+          </div>
+
+          <!-- slider right -->
+          <div class="slider__right">
+            <div class="slider__right-borderSlide3"></div>
+            <img
+              src="/asset/img/featured4.png"
+              alt=""
+              class="slider__right-imgSlide3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Post -->
+      <div class="post__news">
+        <div class="products__FEATURED">
+          <div class="products__bg"></div>
+          <p class="product__title">NEW COLLECTION</p>
+        </div>
+        <div class="post__news-container">
+          <!-- left post -->
+          <div class="post__new-item">
+            <!-- left -->
+            <div class="post__news_item-left">
+              <h3 class="post__news_item__title">Nike</h3>
+              <p class="post__news_item__content">New collection 2023</p>
+              <div class="post__btn">
+                <button href="#" class="post__btn-item">
+                  Buy Now
+                  <i
+                    style="margin-left: 0.4rem; font-size: 1.4rem"
+                    class="bx bx-right-arrow-alt icon"
+                    id="post__btn-arrow"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- right -->
+            <div class="post__news_item-right">
+              <img
+                src="/asset/img/collection1.png"
+                alt=""
+                class="post__news_item-img"
+              />
+            </div>
+          </div>
+
+          <!-- right post -->
+          <div class="post__new-item">
+            <!-- left -->
+            <div class="post__news_item-left">
+              <h3 class="post__news_item__title">Adidas</h3>
+              <p class="post__news_item__content">New collection 2023</p>
+              <div class="post__btn">
+                <button class="post__btn-item">
+                  Buy Now
+                  <i
+                    style="margin-left: 0.4rem; font-size: 1.4rem"
+                    class="bx bx-right-arrow-alt icon"
+                    id="post__btn-arrow"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="post__news_item-right">
+              <img
+                src="/asset/img/collection2.png"
+                alt=""
+                class="post__news_item-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="products">
+        <div id="Featured" class="products__FEATURED">
+          <div class="products__bg"></div>
+          <p class="product__title">FEATURED</p>
+        </div>
+        <div class="products__layout">
+          <!-- product 1 -->
+          <div class="product__item">
+            <p class="product__item-sale">Sale</p>
+            <div class="product__item-info">
+              <img
+                src="/asset/img/featured1.png"
+                alt="img 1"
+                class="product__item-img"
+              />
+              <div class="product__description">
+                <h3 class="product__title">Nike Prime Hype DF</h3>
+                <div class="product__btn">
+                  <button class="product__btn-item">
+                    Buy Now
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="product__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 2 -->
+          <div class="product__item">
+            <p class="product__item-sale">Sale</p>
+            <div class="product__item-info">
+              <img
+                src="/asset/img/featured2.png"
+                alt="img 1"
+                class="product__item-img"
+              />
+              <div class="product__description">
+                <h3 class="product__title">Nike Hyperdunk Black</h3>
+                <div class="product__btn">
+                  <button href="#" class="product__btn-item">
+                    Buy Now
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="product__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 3 -->
+          <div class="product__item">
+            <p class="product__item-sale">Sale</p>
+            <div class="product__item-info">
+              <img
+                src="/asset/img/featured3.png"
+                alt="img 1"
+                class="product__item-img"
+              />
+              <div class="product__description">
+                <h3 class="product__title">Nike Men's Prime</h3>
+                <div class="product__btn">
+                  <button href="#" class="product__btn-item">
+                    Buy Now
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="product__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Women -->
+      <div class="women">
+        <div id="Women" class="women__FEATURED">
+          <div class="women__bg"></div>
+          <p class="product__title">Women</p>
+        </div>
+        <div class="women__layout">
+          <!-- product 1 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img/women1.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">Nike Prime Hype DF</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">2.500.000</p>
+                  <sup>đ</sup>
+                </div>
+                <div class="women__btn">
+                  <button class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- women 2 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img//women2.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">Nike Hyperdunk Black</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">3.273.288</p>
+                  <sup>đ</sup>
+                </div>
+                <div class="women__btn">
+                  <button href="#" class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- women 3 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img/women3.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">Nike Men's Prime</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">4.972.376</p>
+                  <sup>đ</sup>
+                </div>
+
+                <div class="women__btn">
+                  <button href="#" class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- women 4 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img/women4.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">Nike Men's Prime</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">2.000.000</p>
+                  <sup>đ</sup>
+                </div>
+                <div class="women__btn">
+                  <button href="#" class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Men -->
+      <div class="women">
+        <div id="Men" class="women__FEATURED">
+          <div class="women__bg"></div>
+          <p class="product__title">Men</p>
+        </div>
+        <div class="women__layout" id="">
+          <!-- product 1 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img/img1_removepics.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">Nike Air Zoom</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">2.490.000</p>
+                  <sup>đ</sup>
+                </div>
+                <div class="women__btn">
+                  <button class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- men 2 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img/img2_removepics.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">Giày Golf nam Nike</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">2.590.000</p>
+                  <sup>đ</sup>
+                </div>
+                <div class="women__btn">
+                  <button href="#" class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- men 3 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img/img3_removepics.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">Nike Air Zoom Structure</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">1.681.737</p>
+                  <sup>đ</sup>
+                </div>
+                <div class="women__btn">
+                  <button href="#" class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- men 4 -->
+          <div class="women__item">
+            <p class="women__item-sale">Sale</p>
+            <div class="women__item-info">
+              <img
+                src="/asset/img/img4_removepics.png"
+                alt="img 1"
+                class="women__item-img"
+              />
+              <div class="women__description">
+                <h3 class="women__title">NIKE Pegasus 38</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__price">3.390.000</p>
+                  <sup>đ</sup>
+                </div>
+                <div class="women__btn">
+                  <button href="#" class="women__btn-item">
+                    Add to Cart
+                    <i
+                      class="bx bx-right-arrow-alt icon"
+                      id="women__btn-arrow"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- back top -->
+      <div class="backtop">
+        <a href="#"><i class="bx bx-up-arrow-alt backtop__btn"></i></a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer section">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <a href="#" class="footer__logo">
+                <img src="/asset/img/favicon.png" alt="" class="footer__img" />
+                SNEAKERS
+              </a>
+              <p class="footer__description">
+                New collection of shoes <br />
+                2023
+              </p>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Explore</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#Home" class="footer__link">Home</a>
+                </li>
+                <li>
+                  <a id="Featured" href="#Featured" class="footer__link"
+                    >Featured</a
+                  >
+                </li>
+                <li>
+                  <a id="Women" href="#Women" class="footer__link">Women</a>
+                </li>
+                <li>
+                  <a id="Men" href="#Men" class="footer__link">Men</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Support</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#" class="footer__link">Product Help</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Customer Care</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Athorized Service</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__social">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copy">
+          © 2023 coded by
+          <a style="color: #fff" href="#" target="_blank">Việt anh</a>
+        </p>
+      </footer>
+
+      <!-- Modol login -->
+      <form class="modal ShowModal" id="form">
+        <div class="modal__container">
+          <div class="modal__container-form">
+            <!-- icon close -->
+            <div class="modal__container-form-close close">
+              <i class="bx bx-x"></i>
+            </div>
+
+            <!-- form  -->
+            <div class="modal__form">
+              <header class="modal__header">
+                <h3 class="modal__header-title">Xin chào! 👋</h3>
+                <p class="modal__header-text">Đăng Nhập Tài Khoản</p>
+              </header>
+
+              <div class="modal__input">
+                <!-- Số điện thoại và Email -->
+                <div class="modal__input-control">
+                  <label for="Email" class="modal__input-item1"
+                    >Số điện thoại hoặc Email*</label
+                  >
+                  <input
+                    id="Email"
+                    type="text"
+                    class="modal__header-input"
+                    placeholder="Vui lòng nhập Email..."
+                  />
+                  <div class="modal__error"></div>
+                </div>
+
+                <!-- Mật khẩu -->
+                <div class="modal__input-control">
+                  <label for="password" class="modal__input-item1"
+                    >Mật khẩu*</label
+                  >
+                  <input
+                    id="password"
+                    type="password"
+                    class="modal__header-input"
+                    placeholder="Vui lòng nhập mật khẩu...."
+                  />
+
+                  <div class="modal__error"></div>
+                  <!-- eye -->
+                  <div class="modal__eyes">
+                    <div id="toggler-password">
+                      <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="modal__btn-login">
+                  ĐĂNG NHẬP
+                </button>
+              </div>
+              <div class="modal__text-login">
+                <div class="modal__text-lgItem">Hoặc, đăng nhập bằng</div>
+              </div>
+
+              <did class="modal__social">
+                <a href="#" class="modal__face">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#3f51b5"
+                      d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M29.368,24H26v12h-5V24h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H30v4h-2.287 C26.104,16,26,16.6,26,17.723V20h4L29.368,24z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="modal__google">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#fbc02d"
+                      d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                    <path
+                      fill="#e53935"
+                      d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+                    ></path>
+                    <path
+                      fill="#4caf50"
+                      d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+                    ></path>
+                    <path
+                      fill="#1565c0"
+                      d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                  </svg>
+                </a>
+              </did>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- modal shopping cart -->
+      <div class="modal__cart" id="modalCart">
+        <div class="modal__form-layout">
+          <!-- header -->
+          <div class="modal__form-nav">
+            <h3 class="modal__form-title">Shopping Cart</h3>
+            <i class="bx bx-x modal__form-close"></i>
+          </div>
+
+          <!-- cart -->
+          <div class="modal__form-card">
+            <div class="modal__form-column">
+              <div class="modal__form-shopping"></div>
+            </div>
+
+            <div class="modal__close-total">
+              <div class="modal__total-fl">
+                <h3 class="modal__close-title">Total:</h3>
+                <div style="display: flex; justify-content: center">
+                  <p class="women__total">0</p>
+                  <sup>đ</sup>
+                </div>
+              </div>
+              <div class="modal__buynow">
+                <h3>Buy Now</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- link JS Slick -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Text run -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+      window.__lc = window.__lc || {};
+      window.__lc.license = 16937418;
+      (function (n, t, c) {
+        function i(n) {
+          return e._h ? e._h.apply(null, n) : e._q.push(n);
+        }
+        var e = {
+          _q: [],
+          _h: null,
+          _v: "2.0",
+          on: function () {
+            i(["on", c.call(arguments)]);
+          },
+          once: function () {
+            i(["once", c.call(arguments)]);
+          },
+          off: function () {
+            i(["off", c.call(arguments)]);
+          },
+          get: function () {
+            if (!e._h)
+              throw new Error(
+                "[LiveChatWidget] You can't use getters before load."
+              );
+            return i(["get", c.call(arguments)]);
+          },
+          call: function () {
+            i(["call", c.call(arguments)]);
+          },
+          init: function () {
+            var n = t.createElement("script");
+            (n.async = !0),
+              (n.type = "text/javascript"),
+              (n.src = "https://cdn.livechatinc.com/tracking.js"),
+              t.head.appendChild(n);
+          },
+        };
+        !n.__lc.asyncInit && e.init(),
+          (n.LiveChatWidget = n.LiveChatWidget || e);
+      })(window, document, [].slice);
+    </script>
+    <noscript>
+      <a href="https://www.livechatinc.com/chat-with/16937418/" rel="nofollow"
+        >Chat with us</a
+      >, powered by
+      <a
+        href="https://www.livechatinc.com/?welcome"
+        rel="noopener nofollow"
+        target="_blank"
+        >LiveChat</a
+      >
+    </noscript>
+    <!-- End of LiveChat code -->
+  </body>
+</html>
