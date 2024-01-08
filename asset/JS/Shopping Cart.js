@@ -73,15 +73,17 @@ function addCart(productsImg, productsName, productsPrice) {
 }
 
 function totoNumbers() {
-  let totalProduct = 0;
-  let totalCount = document.querySelectorAll(".modal__shopping-products");
-  for (let i = 0; i < totalCount; i++) {
-    if (totalCart[i].length) {
-      totalProduct++;
-    }
-    document.querySelectorAll(".header__card div p").innerText = totalProduct;
-  }
+  // Giả sử bạn muốn đếm tổng số sản phẩm có class "modal__shopping-products"
+  let totalCount = document.querySelectorAll(
+    ".modal__shopping-products"
+  ).length;
+
+  // Cập nhật nội dung của phần tử có class "header__card" để hiển thị tổng số
+  document.querySelector(".header__card div p").innerText = totalCount;
+  console.log(totalCount);
 }
+
+// hàm tính tổng tiền
 function totalCart() {
   // lấy thông tin thẻ cha
   let cartItems = document.querySelectorAll(".modal__products-content");

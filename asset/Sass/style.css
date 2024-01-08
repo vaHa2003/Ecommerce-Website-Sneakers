@@ -731,6 +731,12 @@ html {
   .slick-prev {
     position: unset;
   }
+  .modal__shopping-products {
+    display: flex;
+    gap: 2rem !important;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 /* Tablet */
 /* Destop *//*# sourceMappingURL=style.css.map */
