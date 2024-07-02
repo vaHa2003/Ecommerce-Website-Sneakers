@@ -1,0 +1,184 @@
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__container {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 418px;
+  min-height: 200px;
+  border-radius: 1.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 16px 0px,
+    rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+  animation: Showlogin ease 0.5s;
+}
+
+.modal__container-form-close {
+  position: absolute;
+  right: 6px;
+  top: 2px;
+  font-size: 2.2rem;
+}
+
+.modal__container-form-close:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.modal__form {
+  padding: 2rem 2rem;
+  & .modal__header {
+    font-size: 2rem;
+  }
+  & .modal__header-title {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  & .modal__header-text {
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  & .modal__input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  & .modal__input-item1 {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  & .modal__header-input {
+    width: 100%;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    padding: 0 35px 0 10px;
+    height: 40px;
+    outline: none;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  & .modal__btn-login {
+    border: none;
+    margin-top: 0.4rem;
+    background-color: #0259a7;
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 14px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  & .modal__text-login {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0 solid #ccc;
+  }
+
+  & .modal__text-lgItem {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  & .modal__text-login::before {
+    flex: auto;
+    display: block;
+    content: "";
+    border-style: inherit;
+    border-color: inherit;
+    border-width: 1px 0 0;
+  }
+  & .modal__text-login::after {
+    flex: auto;
+    display: block;
+    content: "";
+    border-style: inherit;
+    border-color: inherit;
+    border-width: 1px 0 0;
+  }
+  & .modal__face svg {
+    width: 40px;
+  }
+  & .modal__google svg {
+    width: 40px;
+  }
+}
+
+.modal__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  height: 70px;
+}
+.modal__input-control {
+  position: relative;
+}
+
+.modal__eyes {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  cursor: pointer;
+}
+
+/*? show modal and close */
+.modal.open {
+  display: flex;
+}
+.modal.close {
+  display: none;
+}
+
+/* success and error */
+.modal__input-control.modal__success input {
+  border-color: #0259a7;
+}
+.modal__input-control.modal__error input {
+  border-color: #ff3860;
+}
+
+.modal__input-control .modal__error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* animation login */
+@keyframes Showlogin {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) translateY(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal__container {
+    width: 360px;
+  }
+  .modal__social {
+    height: 40px;
+    margin-top: 1rem;
+  }
+}
