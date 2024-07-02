@@ -760,22 +760,39 @@ html {
     justify-content: space-between;
     align-items: center;
   }
-
-  .modal__form-layout {
-    height: 125vh;
-  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .modal__form-layout {
-    height: 106vh !important;
+    width: 72vh !important;
+  }
+
+  .modal__form-nav {
+    justify-content: normal !important;
+  }
+
+  .modal__shopping-products {
+    gap: 16rem !important;
+    width: 80vh !important;
+    justify-content: normal !important;
+    margin: 0 auto !important;
   }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1600px) {
+  .modal__form-nav {
+    justify-content: normal !important;
+  }
   .modal__form-layout {
-    height: 100vh !important;
+    width: 106vh !important;
+    height: 96vh !important;
+  }
+  .modal__shopping-products {
+    gap: 16rem !important;
+    width: 80vh !important;
+    justify-content: normal !important;
+    margin: 0 auto !important;
   }
 }
 
