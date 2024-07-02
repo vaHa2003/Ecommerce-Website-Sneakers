@@ -760,11 +760,19 @@ html {
     justify-content: space-between;
     align-items: center;
   }
+<<<<<<< HEAD
+=======
+
+  .modal__form-layout {
+    // height: 125vh;
+  }
+>>>>>>> 9d547916d9ac15d1e56a3a4bfccc892822c01b8b
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .modal__form-layout {
+<<<<<<< HEAD
     width: 72vh !important;
   }
 
@@ -777,6 +785,9 @@ html {
     width: 80vh !important;
     justify-content: normal !important;
     margin: 0 auto !important;
+=======
+    // height: 106vh !important;
+>>>>>>> 9d547916d9ac15d1e56a3a4bfccc892822c01b8b
   }
 }
 
@@ -785,6 +796,7 @@ html {
     justify-content: normal !important;
   }
   .modal__form-layout {
+<<<<<<< HEAD
     width: 106vh !important;
     height: 96vh !important;
   }
@@ -793,6 +805,9 @@ html {
     width: 80vh !important;
     justify-content: normal !important;
     margin: 0 auto !important;
+=======
+    // height: 100vh !important;
+>>>>>>> 9d547916d9ac15d1e56a3a4bfccc892822c01b8b
   }
 }
 

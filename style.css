@@ -738,6 +738,7 @@ html {
   }
 }
 /* Tablet */
+<<<<<<< HEAD
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .modal__form-layout {
     width: 72vh !important;
@@ -767,4 +768,6 @@ html {
     margin: 0 auto !important;
   }
 }
+=======
+>>>>>>> 9d547916d9ac15d1e56a3a4bfccc892822c01b8b
 /* Destop *//*# sourceMappingURL=style.css.map */
