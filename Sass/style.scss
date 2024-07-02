@@ -767,7 +767,16 @@ html {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .modal__form-layout {
+    height: 106vh !important;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1600px) {
+  .modal__form-layout {
+    height: 100vh !important;
+  }
 }
 
 /* Destop */
