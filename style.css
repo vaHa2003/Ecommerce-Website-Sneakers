@@ -114,8 +114,7 @@ html {
   flex-direction: column;
   gap: 1rem;
 }
-.slider__left-title,
-.slider__left-discription {
+.slider__left-title, .slider__left-discription {
   font-size: 1rem;
   font-weight: 200;
 }
@@ -195,8 +194,7 @@ html {
   animation: moverUpDown 4s linear infinite;
 }
 @keyframes moverUpDown {
-  0%,
-  10% {
+  0%, 10% {
     transform: translateY(0);
     opacity: 1;
   }
@@ -287,28 +285,16 @@ html {
   flex-direction: column;
   gap: 0.25rem;
 }
-.post__news
-  .post__news-container
-  .post__new-item
-  .post__news_item-left
-  .post__news_item__title {
+.post__news .post__news-container .post__new-item .post__news_item-left .post__news_item__title {
   font-size: 1.5rem;
   margin-bottom: 0.25rem;
 }
-.post__news
-  .post__news-container
-  .post__new-item
-  .post__news_item-left
-  .post__news_item__content {
+.post__news .post__news-container .post__new-item .post__news_item-left .post__news_item__content {
   font-size: 0.938rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
-.post__news
-  .post__news-container
-  .post__new-item
-  .post__news_item-left
-  .post__btn-item {
+.post__news .post__news-container .post__new-item .post__news_item-left .post__btn-item {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -429,44 +415,27 @@ html {
 .products .products__layout .product__item-info .product__item-img:hover {
   transform: rotate(-35deg) scale(1.2);
 }
-.products
-  .products__layout
-  .product__item-info
-  .product__description
-  .product__title {
+.products .products__layout .product__item-info .product__description .product__title {
   font-weight: 600;
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
 }
-.products
-  .products__layout
-  .product__item-info
-  .product__description
-  .product__price {
+.products .products__layout .product__item-info .product__description .product__price {
   margin-bottom: 2rem;
   margin-top: 0.5rem;
   font-weight: 600;
   text-align: center;
   font-size: 1rem;
 }
-.products
-  .products__layout
-  .product__item-info
-  .product__description
-  .product__btn {
+.products .products__layout .product__item-info .product__description .product__btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   cursor: pointer;
 }
-.products
-  .products__layout
-  .product__item-info
-  .product__description
-  .product__btn
-  .product__btn-item {
+.products .products__layout .product__item-info .product__description .product__btn .product__btn-item {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -481,21 +450,10 @@ html {
   border-radius: 0.5rem;
   padding: 1rem 1.7rem;
 }
-.products
-  .products__layout
-  .product__item-info
-  .product__description
-  .product__btn
-  .product__btn-item:hover
-  .icon {
+.products .products__layout .product__item-info .product__description .product__btn .product__btn-item:hover .icon {
   transform: translateX(0.4rem);
 }
-.products
-  .products__layout
-  .product__item-info
-  .product__description
-  .product__btn
-  #product__btn-arrow {
+.products .products__layout .product__item-info .product__description .product__btn #product__btn-arrow {
   font-size: 1.25rem;
 }
 
@@ -598,12 +556,7 @@ html {
   gap: 0.5rem;
   cursor: pointer;
 }
-.women
-  .women__layout
-  .women__item-info
-  .women__description
-  .women__btn
-  .women__btn-item {
+.women .women__layout .women__item-info .women__description .women__btn .women__btn-item {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -618,21 +571,10 @@ html {
   padding: 1rem 1.7rem;
   cursor: pointer;
 }
-.women
-  .women__layout
-  .women__item-info
-  .women__description
-  .women__btn
-  .women__btn-item:hover
-  .icon {
+.women .women__layout .women__item-info .women__description .women__btn .women__btn-item:hover .icon {
   transform: translateX(0.4rem);
 }
-.women
-  .women__layout
-  .women__item-info
-  .women__description
-  .women__btn
-  #women__btn-arrow {
+.women .women__layout .women__item-info .women__description .women__btn #women__btn-arrow {
   font-size: 1.25rem;
 }
 
@@ -794,25 +736,6 @@ html {
     justify-content: space-between;
     align-items: center;
   }
-  .modal__form-layout {
-    height: 125vh;
-  }
 }
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-  .modal__form-layout {
-    height: 106vh !important;
-  }
-}
-@media screen and (min-width: 1001px) and (max-width: 1600px) {
-  .modal__form-layout {
-    height: 100vh !important;
-  }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1600px) {
-  .modal__form-layout {
-    height: 100vh !important;
-  }
-}
-/* Destop */ /*# sourceMappingURL=style.css.map */
+/* Destop *//*# sourceMappingURL=style.css.map */
