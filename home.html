@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sneaker vaHa</title>
+    <title>Pitckman</title>
 
     <!-- link Favicon  -->
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="https://pitchmanpens.com/cdn/shop/files/Favicon_Letter_Pen.png?crop=center&height=32&v=1707778915&width=32"
+      type="image/x-icon"
+    />
 
     <!-- link Box icon -->
     <link
@@ -37,10 +41,11 @@
     <link rel="stylesheet" href="cart.css" />
 
     <!-- link JS -->
-    <script defer src="main.js"></script>
-    <script defer src="login.js"></script>
-    <script defer src="cart.js"></script>
-    <script defer src="shoppingcart.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/login.js"></script>
+    <script defer src="./js/cart.js"></script>
+    <script defer src="./js/shoppingcart.js"></script>
+    <script defer src="./js/register.js"></script>
   </head>
   <body>
     <div id="main">
@@ -57,19 +62,25 @@
             <a href="#"
               ><img
                 class="header__logo-img"
-                src="./img/favicon.png"
+                src="./img/logopicth.png"
                 alt="header logo"
             /></a>
-            <a href="#" class="header__logo-title">SNEAKERS vaHa</a>
+            <!-- <a href="#" class="header__logo-title">Pitchman</a> -->
           </span>
 
           <!-- header right -->
           <div class="header__right">
             <ul class="header__nav" id="nav__show">
-              <li><a class="header__nav-link" href="#Home">Home</a></li>
-              <li><a class="header__nav-link" href="#Featured">Featured</a></li>
-              <li><a class="header__nav-link" href="#Women">Women</a></li>
-              <li><a class="header__nav-link" href="#Men">Men</a></li>
+              <li><a class="header__nav-link" href="#Home">Our Pens</a></li>
+              <li>
+                <a class="header__nav-link" href="#Featured"
+                  >Inks, Nibs, and Journal</a
+                >
+              </li>
+              <li><a class="header__nav-link" href="#Women">Tycoon Collection</a></li>
+              <li>
+                <a class="header__nav-link" href="#Men">Closer Collection</a>
+              </li>
               <!-- <li><a class="header__nav-link" href="#Shop">Shop</a></li> -->
               <li>
                 <a class="header__nav-link" href="#Login" id="login">
@@ -103,17 +114,18 @@
       </div>
 
       <!-- slider  -->
-      <div id="Home" class="slider__show">
+      <div id="Home" class="slider__show" style="background-color: #000">
         <!-- slide 1 -->
         <div class="slider">
           <!-- slider left -->
           <div class="slider__left">
-            <h3 class="slider__left-title">NIKE SPORT SHOSE</h3>
+            <h3 class="slider__left-title">Pearl Rollerball Pen</h3>
             <h1 class="slider__left-titleMax1">
-              YEEZY BOOT<br /><span class="auto-type"> </span>
+              Closer LUXE <br />
+              <span class="auto-type"> </span>
             </h1>
             <p class="slider__left-discription">
-              Explore the new collection of sneaker
+              Discover the new pen collection
             </p>
             <button class="slider__left-btn">Explore now</button>
           </div>
@@ -121,7 +133,7 @@
           <!-- slider right -->
           <div class="slider__right">
             <div class="slider__right-border"></div>
-            <img src="./img/imghome.png" alt="" class="slider__right-img" />
+            <img src="./img/pencil1.png" alt="" class="slider__right-img" />
           </div>
         </div>
 
@@ -129,7 +141,7 @@
         <div class="slider">
           <!-- slider left -->
           <div class="slider__left">
-            <h3 class="slider__left-title">SNEAKER COMPANY</h3>
+            <h3 class="slider__left-title">Shell Rollerball Pen</h3>
             <h1 class="slider__left-titleMax2">
               Fall Limited <br /><span class="auto__text-slide2"></span>
             </h1>
@@ -146,7 +158,7 @@
           <div class="slider__right">
             <div class="slider__right-borderSlide2"></div>
             <img
-              src="./img/slide 3.png"
+              src="./img/pencil3.png"
               alt=""
               class="slider__right-imgSlide2"
             />
@@ -157,15 +169,15 @@
         <div class="slider">
           <!-- slider left -->
           <div class="slider__left">
-            <h3 class="slider__left-title">Balenciaga</h3>
+            <h3 class="slider__left-title">Rainmaker Sapphire Abalone</h3>
             <h1 class="slider__left-titleMax3">
-              MEN RUNNER <br />
+             Rainmaker Sapphire Abalone<br />
               <span class="auto__textSlide3"></span>
             </h1>
             <p class="slider__left-discription">
-              Runner logo printed on exterior <br />
-              • Balenciaga logo embroidered on the tongue <br />
-              • Balenciaga logo at the back of the heel <br />
+              - Individually Handcrafted 
+              <br> -  LUXE Edition 
+              <br>- Limited Production
             </p>
             <button class="slider__left-btn">Explore now</button>
           </div>
@@ -174,7 +186,7 @@
           <div class="slider__right">
             <div class="slider__right-borderSlide3"></div>
             <img
-              src="./img/featured4.png"
+              src="./img/pencil2.png"
               alt=""
               class="slider__right-imgSlide3"
             />
@@ -186,15 +198,18 @@
       <div class="post__news">
         <div class="products__FEATURED">
           <div class="products__bg"></div>
-          <p class="product__title">NEW COLLECTION</p>
+          <p class="product__title">Rainmaker Collection</p>
         </div>
         <div class="post__news-container">
           <!-- left post -->
           <div class="post__new-item">
             <!-- left -->
             <div class="post__news_item-left">
-              <h3 class="post__news_item__title">Nike</h3>
-              <p class="post__news_item__content">New collection 2023</p>
+              <!-- <h3 class="post__news_item__title">Nike</h3> -->
+              <p class="post__news_item__content">
+                Rainmaker Blue <br />
+                Fancy Rollerball Pen
+              </p>
               <div class="post__btn">
                 <button href="#" class="post__btn-item">
                   Buy Now
@@ -210,7 +225,7 @@
             <!-- right -->
             <div class="post__news_item-right">
               <img
-                src="./img/collection1.png"
+                src="https://pitchmanpens.com/cdn/shop/files/FA1B18C0-00DD-465D-9381-9C5EE75435D8-591804_3fd9c781-2e4f-4975-bb3f-8f00f880c9d5.jpg?v=1721355729"
                 alt=""
                 class="post__news_item-img"
               />
@@ -221,8 +236,12 @@
           <div class="post__new-item">
             <!-- left -->
             <div class="post__news_item-left">
-              <h3 class="post__news_item__title">Adidas</h3>
-              <p class="post__news_item__content">New collection 2023</p>
+              <!-- <h3 class="post__news_item__title">Adidas</h3> -->
+              <p class="post__news_item__content">
+                Rainmaker Blue <br />
+                Abalone Shell <br />
+                Fountain Pen
+              </p>
               <div class="post__btn">
                 <button class="post__btn-item">
                   Buy Now
@@ -237,7 +256,7 @@
             <!-- right -->
             <div class="post__news_item-right">
               <img
-                src="./img/collection2.png"
+                src="https://pitchmanpens.in/cdn/shop/products/PitchmanTycoonEmeraldAbalonePen-2_c2c91098-d1e3-458a-af0a-84ae39be399f.jpg?v=1647647335&width=1500"
                 alt=""
                 class="post__news_item-img"
               />
@@ -250,7 +269,7 @@
       <div class="products">
         <div id="Featured" class="products__FEATURED">
           <div class="products__bg"></div>
-          <p class="product__title">FEATURED</p>
+          <p class="product__title">Inks, Nibs, and Journal</p>
         </div>
         <div class="products__layout">
           <!-- product 1 -->
@@ -258,12 +277,14 @@
             <p class="product__item-sale">Sale</p>
             <div class="product__item-info">
               <img
-                src="./img/featured1.png"
+                src="./img/fetur4.png"
                 alt="img 1"
                 class="product__item-img"
               />
               <div class="product__description">
-                <h3 class="product__title">Nike Prime Hype DF</h3>
+                <h3 class="product__title">
+                  Tycoon Lustrous Sapphire Abalone Shell Fountain Pen
+                </h3>
                 <div class="product__btn">
                   <button class="product__btn-item">
                     Buy Now
@@ -282,12 +303,14 @@
             <p class="product__item-sale">Sale</p>
             <div class="product__item-info">
               <img
-                src="./img/featured2.png"
+                src="./img/feture1.png"
                 alt="img 1"
                 class="product__item-img"
               />
               <div class="product__description">
-                <h3 class="product__title">Nike Hyperdunk Black</h3>
+                <h3 class="product__title">
+                  Tycoon Lustrous Black Fountain Pen
+                </h3>
                 <div class="product__btn">
                   <button href="#" class="product__btn-item">
                     Buy Now
@@ -306,12 +329,14 @@
             <p class="product__item-sale">Sale</p>
             <div class="product__item-info">
               <img
-                src="./img/featured3.png"
+                src="./img/feture2.png"
                 alt="img 1"
                 class="product__item-img"
               />
               <div class="product__description">
-                <h3 class="product__title">Nike Men's Prime</h3>
+                <h3 class="product__title">
+                  Tycoon Lustrous Emerald Abalone Shell Fountain Pen
+                </h3>
                 <div class="product__btn">
                   <button href="#" class="product__btn-item">
                     Buy Now
@@ -331,137 +356,34 @@
       <div class="women">
         <div id="Women" class="women__FEATURED">
           <div class="women__bg"></div>
-          <p class="product__title">Women</p>
+          <p class="product__title">Tycoon Collection</p>
         </div>
-        <div class="women__layout">
-          <!-- product 1 -->
-          <div class="women__item">
-            <p class="women__item-sale">Sale</p>
-            <div class="women__item-info">
-              <img src="./img/women1.png" alt="img 1" class="women__item-img" />
-              <div class="women__description">
-                <h3 class="women__title">Nike Prime Hype DF</h3>
-                <div style="display: flex; justify-content: center">
-                  <p class="women__price">2.500.000</p>
-                  <sup>đ</sup>
-                </div>
-                <div class="women__btn">
-                  <button class="women__btn-item">
-                    Add to Cart
-                    <i
-                      class="bx bx-right-arrow-alt icon"
-                      id="women__btn-arrow"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- women 2 -->
-          <div class="women__item">
-            <p class="women__item-sale">Sale</p>
-            <div class="women__item-info">
-              <img
-                src="./img//women2.png"
-                alt="img 1"
-                class="women__item-img"
-              />
-              <div class="women__description">
-                <h3 class="women__title">Nike Hyperdunk Black</h3>
-                <div style="display: flex; justify-content: center">
-                  <p class="women__price">3.273.288</p>
-                  <sup>đ</sup>
-                </div>
-                <div class="women__btn">
-                  <button href="#" class="women__btn-item">
-                    Add to Cart
-                    <i
-                      class="bx bx-right-arrow-alt icon"
-                      id="women__btn-arrow"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- women 3 -->
-          <div class="women__item">
-            <p class="women__item-sale">Sale</p>
-            <div class="women__item-info">
-              <img src="./img/women3.png" alt="img 1" class="women__item-img" />
-              <div class="women__description">
-                <h3 class="women__title">Nike Men's Prime</h3>
-                <div style="display: flex; justify-content: center">
-                  <p class="women__price">4.972.376</p>
-                  <sup>đ</sup>
-                </div>
-
-                <div class="women__btn">
-                  <button href="#" class="women__btn-item">
-                    Add to Cart
-                    <i
-                      class="bx bx-right-arrow-alt icon"
-                      id="women__btn-arrow"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- women 4 -->
-          <div class="women__item">
-            <p class="women__item-sale">Sale</p>
-            <div class="women__item-info">
-              <img src="./img/women4.png" alt="img 1" class="women__item-img" />
-              <div class="women__description">
-                <h3 class="women__title">Nike Men's Prime</h3>
-                <div style="display: flex; justify-content: center">
-                  <p class="women__price">2.000.000</p>
-                  <sup>đ</sup>
-                </div>
-                <div class="women__btn">
-                  <button href="#" class="women__btn-item">
-                    Add to Cart
-                    <i
-                      class="bx bx-right-arrow-alt icon"
-                      id="women__btn-arrow"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="women__layout" id="product-list"></div>
       </div>
 
       <!-- Men -->
       <div class="women">
         <div id="Men" class="women__FEATURED">
           <div class="women__bg"></div>
-          <p class="product__title">Men</p>
+          <p class="product__title">Closer Collection</p>
         </div>
-        <div class="women__layout" id="">
+        <div class="women__layout" id="product-men">
           <!-- product 1 -->
           <div class="women__item">
             <p class="women__item-sale">Sale</p>
             <div class="women__item-info">
-              <img
-                src="./img/img1_removepics.png"
-                alt="img 1"
-                class="women__item-img"
-              />
+              <img src="./img/men1.png" alt="img 1" class="women__item-img" />
               <div class="women__description">
-                <h3 class="women__title">Nike Air Zoom</h3>
+                <h3 class="women__title">
+                  Closer LUXE White Mother of Pearl Rollerball Pen
+                </h3>
                 <div style="display: flex; justify-content: center">
                   <p class="women__price">2.490.000</p>
                   <sup>đ</sup>
                 </div>
                 <div class="women__btn">
                   <button class="women__btn-item">
-                    Add to Cart
+                    View to Cart
                     <i
                       class="bx bx-right-arrow-alt icon"
                       id="women__btn-arrow"
@@ -476,20 +398,18 @@
           <div class="women__item">
             <p class="women__item-sale">Sale</p>
             <div class="women__item-info">
-              <img
-                src="./img/img2_removepics.png"
-                alt="img 1"
-                class="women__item-img"
-              />
+              <img src="./img/men2.png" alt="img 1" class="women__item-img" />
               <div class="women__description">
-                <h3 class="women__title">Giày Golf nam Nike</h3>
+                <h3 class="women__title">
+                  Closer LUXE White Mother of Pearl Fountain Pen
+                </h3>
                 <div style="display: flex; justify-content: center">
                   <p class="women__price">2.590.000</p>
                   <sup>đ</sup>
                 </div>
                 <div class="women__btn">
                   <button href="#" class="women__btn-item">
-                    Add to Cart
+                    View to Cart
                     <i
                       class="bx bx-right-arrow-alt icon"
                       id="women__btn-arrow"
@@ -504,20 +424,18 @@
           <div class="women__item">
             <p class="women__item-sale">Sale</p>
             <div class="women__item-info">
-              <img
-                src="./img/img3_removepics.png"
-                alt="img 1"
-                class="women__item-img"
-              />
+              <img src="./img/men3.png" alt="img 1" class="women__item-img" />
               <div class="women__description">
-                <h3 class="women__title">Nike Air Zoom Structure</h3>
+                <h3 class="women__title">
+                  Closer LUXE Sapphire Abalone Shell Fountain Pen
+                </h3>
                 <div style="display: flex; justify-content: center">
                   <p class="women__price">1.681.737</p>
                   <sup>đ</sup>
                 </div>
                 <div class="women__btn">
                   <button href="#" class="women__btn-item">
-                    Add to Cart
+                    View to Cart
                     <i
                       class="bx bx-right-arrow-alt icon"
                       id="women__btn-arrow"
@@ -532,20 +450,18 @@
           <div class="women__item">
             <p class="women__item-sale">Sale</p>
             <div class="women__item-info">
-              <img
-                src="./img/img4_removepics.png"
-                alt="img 1"
-                class="women__item-img"
-              />
+              <img src="./img/men4.png" alt="img 1" class="women__item-img" />
               <div class="women__description">
-                <h3 class="women__title">NIKE Pegasus 38</h3>
+                <h3 class="women__title">
+                  Closer LUXE Sapphire Abalone Shell Rollerball Pen
+                </h3>
                 <div style="display: flex; justify-content: center">
                   <p class="women__price">3.390.000</p>
                   <sup>đ</sup>
                 </div>
                 <div class="women__btn">
                   <button href="#" class="women__btn-item">
-                    Add to Cart
+                    View to Cart
                     <i
                       class="bx bx-right-arrow-alt icon"
                       id="women__btn-arrow"
@@ -569,8 +485,8 @@
           <div class="footer__container">
             <div class="footer__content">
               <a href="#" class="footer__logo">
-                <img src="./img/favicon.png" alt="" class="footer__img" />
-                SNEAKERS
+                <img src="./img/logopicth.png" alt="" class="footer__img" />
+                PITCHMAN
               </a>
               <p class="footer__description">
                 New collection of shoes <br />
@@ -644,7 +560,7 @@
 
         <p class="footer__copy">
           © 2023 coded by
-          <a style="color: #fff" href="#" target="_blank">Việt anh</a>
+          <a style="color: #fff" href="#" target="_blank">Pitckman</a>
         </p>
       </footer>
 
@@ -660,21 +576,21 @@
             <!-- form  -->
             <div class="modal__form">
               <header class="modal__header">
-                <h3 class="modal__header-title">Xin chào! 👋</h3>
-                <p class="modal__header-text">Đăng Nhập Tài Khoản</p>
+                <h3 class="modal__header-title">Hello! 👋</h3>
+                <p class="modal__header-text">Login Account</p>
               </header>
 
               <div class="modal__input">
                 <!-- Số điện thoại và Email -->
                 <div class="modal__input-control">
                   <label for="Email" class="modal__input-item1"
-                    >Số điện thoại hoặc Email*</label
+                    >Phone number or Email*</label
                   >
                   <input
                     id="Email"
                     type="text"
                     class="modal__header-input"
-                    placeholder="Vui lòng nhập Email..."
+                    placeholder="Please enter Email..."
                   />
                   <div class="modal__error"></div>
                 </div>
@@ -682,13 +598,13 @@
                 <!-- Mật khẩu -->
                 <div class="modal__input-control">
                   <label for="password" class="modal__input-item1"
-                    >Mật khẩu*</label
+                    >Password*</label
                   >
                   <input
                     id="password"
                     type="password"
                     class="modal__header-input"
-                    placeholder="Vui lòng nhập mật khẩu...."
+                    placeholder="Please enter your password...."
                   />
 
                   <div class="modal__error"></div>
@@ -700,12 +616,10 @@
                   </div>
                 </div>
 
-                <button type="submit" class="modal__btn-login">
-                  ĐĂNG NHẬP
-                </button>
+                <button type="submit" class="modal__btn-login">LOG IN</button>
               </div>
               <div class="modal__text-login">
-                <div class="modal__text-lgItem">Hoặc, đăng nhập bằng</div>
+                <div class="modal__text-lgItem">Or, sign in with</div>
               </div>
 
               <did class="modal__social">
@@ -756,6 +670,18 @@
                   </svg>
                 </a>
               </did>
+
+              <!-- Chưa có tài khoản? Đăng ký -->
+              <div class="modal__register-link">
+                <p>
+                  Don't have an account?
+                  <a
+                    href="/Ecommerce-Website-Sneakers/resgister.html"
+                    id="showRegisterModal"
+                    >Register here</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -788,6 +714,15 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Popup đăng xuất -->
+      <div id="logoutModal" class="logout-modal">
+        <div class="logout-modal-content">
+          <p>Are you sure you want to log out?</p>
+          <button id="confirmLogout">Yes</button>
+          <button id="cancelLogout">No</button>
         </div>
       </div>
     </div>

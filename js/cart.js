@@ -1,5 +1,6 @@
 // ==== Show modal cart ========
 const showCart = document.getElementById("showCart");
+console.log("vietanh ~ showCart:", showCart);
 const modalCart = document.getElementById("modalCart");
 const closeCart = document.querySelector(".modal__form-close");
 

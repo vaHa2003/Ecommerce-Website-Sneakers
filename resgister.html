@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+
+      <!-- link Favicon  -->
+      <link
+      rel="shortcut icon"
+      href="https://pitchmanpens.com/cdn/shop/files/Favicon_Letter_Pen.png?crop=center&height=32&v=1707778915&width=32"
+      type="image/x-icon"
+    />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="register.css">
+
+    <!-- js -->
+    <script defer src="./js/register.js"></script>
+  </head>
+  <body>
+    <!-- modal đăng ký -->
+    <div class="modal__register" id="modalRegister">
+      <div class="modal__form-layout">
+        <!-- header -->
+        <div class="modal__form-nav">
+          <h3 class="modal__form-title">Register Account</h3>
+          <i class="bx bx-x modal__form-close"></i>
+        </div>
+
+        <!-- form đăng ký -->
+        <div class="modal__form-card">
+          <form class="modal__form">
+            <!-- Họ tên -->
+            <div class="modal__input-control">
+              <label for="fullName" class="modal__input-item1"
+                >Full Name*</label
+              >
+              <input
+                id="fullName"
+                type="text"
+                class="modal__header-input"
+                placeholder="Enter your full name"
+                required
+              />
+              <div class="modal__error"></div>
+            </div>
+
+            <!-- Email -->
+            <div class="modal__input-control">
+              <label for="email" class="modal__input-item1">Email*</label>
+              <input
+                id="email"
+                type="email"
+                class="modal__header-input"
+                placeholder="Enter your email"
+                required
+              />
+              <div class="modal__error"></div>
+            </div>
+
+            <!-- Mật khẩu -->
+            <div class="modal__input-control">
+              <label for="password" class="modal__input-item1">Password*</label>
+              <input
+                id="password"
+                type="password"
+                class="modal__header-input"
+                placeholder="Enter your password"
+                required
+              />
+              <div class="modal__error"></div>
+              <div class="modal__eyes">
+                <div id="toggler-password">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Xác nhận mật khẩu -->
+            <div class="modal__input-control">
+              <label for="confirmPassword" class="modal__input-item1"
+                >Confirm Password*</label
+              >
+              <input
+                id="confirmPassword"
+                type="password"
+                class="modal__header-input"
+                placeholder="Confirm your password"
+                required
+              />
+              <div class="modal__error"></div>
+            </div>
+
+            <button type="submit" class="modal__btn-register">REGISTER</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

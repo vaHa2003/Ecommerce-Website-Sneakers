@@ -1,0 +1,108 @@
+.modal__register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6a6866;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal__form-layout {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal__form-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal__form-nav .modal__form-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.modal__form-nav .modal__form-close {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal__form-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input-control {
+  margin-bottom: 15px;
+}
+.modal__input-control .modal__input-item1 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+.modal__input-control .modal__header-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.modal__input-control .modal__header-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+.modal__input-control .modal__error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.modal__eyes {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.modal__eyes i {
+  font-size: 20px;
+}
+
+.modal__btn-register {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.modal__btn-register:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+  .modal__form-layout {
+    padding: 15px;
+  }
+  .modal__form-title {
+    font-size: 20px;
+  }
+  .modal__btn-register {
+    font-size: 14px;
+  }
+  .modal__register {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=register.css.map */

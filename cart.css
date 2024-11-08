@@ -31,12 +31,8 @@
   justify-content: space-between;
   position: fixed;
   background: #ccc;
-<<<<<<< HEAD
   /* width: 94vw; */
   gap: 1rem;
-=======
-  width: 94vw;
->>>>>>> 9d547916d9ac15d1e56a3a4bfccc892822c01b8b
   height: 5vh;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   align-items: center;
@@ -174,4 +170,4 @@
     opacity: 0.4;
     transform: translateX(100%);
   }
-}/*# sourceMappingURL=Cart.css.map */
+}/*# sourceMappingURL=cart.css.map */

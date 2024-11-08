@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link Favicon  -->
+    <link
+      rel="shortcut icon"
+      href="https://pitchmanpens.com/cdn/shop/files/Favicon_Letter_Pen.png?crop=center&height=32&v=1707778915&width=32"
+      type="image/x-icon"
+    />
+
+    <!-- link Box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link font awesone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- link HTML-slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- link HTML-slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="./product-detail.css" />
+
+    <!-- link JS -->
+    <script defer src="./js/product-details.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/login.js"></script>
+    <script defer src="./js/cart.js"></script>
+    <script defer src="./js/shoppingcart.js"></script>
+    <script defer src="./js/register.js"></script>
+  </head>
+  <body>
+    <div>
+      <!-- HEADER -->
+      <div class="header__bg">
+        <header class="header">
+          <!-- header left -->
+          <span class="header__logo">
+            <a class="header__toggle" id="menu">
+              <i class="bx bxs-grid-alt"></i>
+            </a>
+          </span>
+          <span class="header__center">
+            <a href="/Ecommerce-Website-Sneakers/home.html">
+              <img
+                class="header__logo-img"
+                src="./img/logopicth.png"
+                alt="header logo"
+              />
+            </a>
+          </span>
+
+          <!-- header right -->
+          <div class="header__right">
+            <ul class="header__nav" id="nav__show">
+              <li><a class="header__nav-link" href="#Home">Our Pens</a></li>
+              <li>
+                <a class="header__nav-link" href="#Featured"
+                  >Inks, Nibs, and Journal</a
+                >
+              </li>
+              <li><a class="header__nav-link" href="#Women">Explore</a></li>
+              <li>
+                <a class="header__nav-link" href="#Men">About Pitchman</a>
+              </li>
+              <li>
+                <a class="header__nav-link" href="#Login" id="login">
+                  <i class="bx bxs-user"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- shop card -->
+            <div class="header__card" id="showCart">
+              <i style="position: relative" class="bx bxs-shopping-bag"></i>
+              <div
+                style="
+                  position: absolute;
+                  top: 12px;
+                  right: 16px;
+                  font-size: 14px;
+                  background: red;
+                  border-radius: 50%;
+                  width: 18px;
+                  height: 18px;
+                  color: #fff;
+                  text-align: center;
+                "
+                class="total-number"
+              >
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- Product Detail -->
+      <div id="product-detail-container"></div>
+
+      <!-- list product -->
+      <div class="women">
+        <div id="Women" class="women__FEATURED">
+          <div class="women__bg"></div>
+          <p class="product__title">More from this collection</p>
+        </div>
+        <div class="women__layout" id="product__list"></div>
+      </div>
+
+      <!-- modal shopping cart -->
+      <div class="modal__cart" id="modalCart">
+        <div class="modal__form-layout">
+          <!-- header -->
+          <div class="modal__form-nav">
+            <h3 class="modal__form-title">Shopping Cart</h3>
+            <i class="bx bx-x modal__form-close"></i>
+          </div>
+
+          <!-- cart -->
+          <div class="modal__form-card">
+            <div class="modal__form-column">
+              <div class="modal__form-shopping"></div>
+              <div class="modal__close-total">
+                <div class="modal__total-fl">
+                  <h3 class="modal__close-title">Total:</h3>
+                  <div style="display: flex; justify-content: center">
+                    <p class="women__total">0</p>
+                    <sup>đ</sup>
+                  </div>
+                </div>
+                <div class="modal__buynow">
+                  <h3>Buy Now</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modol login -->
+      <form class="modal ShowModal" id="form">
+        <div class="modal__container">
+          <div class="modal__container-form">
+            <!-- icon close -->
+            <div class="modal__container-form-close close">
+              <i class="bx bx-x"></i>
+            </div>
+
+            <!-- form  -->
+            <div class="modal__form">
+              <header class="modal__header">
+                <h3 class="modal__header-title">Hello! 👋</h3>
+                <p class="modal__header-text">Login Account</p>
+              </header>
+
+              <div class="modal__input">
+                <!-- Số điện thoại và Email -->
+                <div class="modal__input-control">
+                  <label for="Email" class="modal__input-item1"
+                    >Phone number or Email*</label
+                  >
+                  <input
+                    id="Email"
+                    type="text"
+                    class="modal__header-input"
+                    placeholder="Please enter Email..."
+                  />
+                  <div class="modal__error"></div>
+                </div>
+
+                <!-- Mật khẩu -->
+                <div class="modal__input-control">
+                  <label for="password" class="modal__input-item1"
+                    >Password*</label
+                  >
+                  <input
+                    id="password"
+                    type="password"
+                    class="modal__header-input"
+                    placeholder="Please enter your password...."
+                  />
+
+                  <div class="modal__error"></div>
+                  <!-- eye -->
+                  <div class="modal__eyes">
+                    <div id="toggler-password">
+                      <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="modal__btn-login">LOG IN</button>
+              </div>
+              <div class="modal__text-login">
+                <div class="modal__text-lgItem">Or, sign in with</div>
+              </div>
+
+              <did class="modal__social">
+                <a href="#" class="modal__face">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#3f51b5"
+                      d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M29.368,24H26v12h-5V24h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H30v4h-2.287 C26.104,16,26,16.6,26,17.723V20h4L29.368,24z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="modal__google">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#fbc02d"
+                      d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                    <path
+                      fill="#e53935"
+                      d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+                    ></path>
+                    <path
+                      fill="#4caf50"
+                      d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+                    ></path>
+                    <path
+                      fill="#1565c0"
+                      d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                  </svg>
+                </a>
+              </did>
+
+              <!-- Chưa có tài khoản? Đăng ký -->
+              <div class="modal__register-link">
+                <p>
+                  Don't have an account?
+                  <a
+                    href="/Ecommerce-Website-Sneakers/resgister.html"
+                    id="showRegisterModal"
+                    >Register here</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- Popup đăng xuất -->
+      <div id="logoutModal" class="logout-modal">
+        <div class="logout-modal-content">
+          <p>Are you sure you want to log out?</p>
+          <button id="confirmLogout">Yes</button>
+          <button id="cancelLogout">No</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer section">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <a href="#" class="footer__logo">
+                <img src="./img/logopicth.png" alt="" class="footer__img" />
+                Pitckman
+              </a>
+              <p class="footer__description">New PEN collection 2024</p>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Shop Our Collections</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#Home" class="footer__link">Closer</a>
+                </li>
+                <li>
+                  <a id="Featured" href="#Featured" class="footer__link"
+                    >Tycoon</a
+                  >
+                </li>
+                <li>
+                  <a id="Women" href="#Women" class="footer__link">Rainmaker</a>
+                </li>
+                <li>
+                  <a id="Men" href="#Men" class="footer__link">Negotiator</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Customer Service</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#Home" class="footer__link">Contact Us</a>
+                </li>
+                <li>
+                  <a id="Featured" href="#Featured" class="footer__link"
+                    >Book an Appointment</a
+                  >
+                </li>
+                <li>
+                  <a id="Women" href="#Women" class="footer__link"
+                    >Warranty & Guarantee</a
+                  >
+                </li>
+                <li>
+                  <a id="Men" href="#Men" class="footer__link"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Explore Pitchman</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#" class="footer__link"
+                    >Blog - For the Love of Pens</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__link">I Love My Pitchman</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Warranty & Guarantee</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__social">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copy">
+          © 2024 coded by
+          <a style="color: #fff" href="#" target="_blank">Pickman</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
