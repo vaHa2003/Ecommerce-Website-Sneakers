@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solstice Scribes</title>
+
+    <!-- link Favicon  -->
+    <link
+      rel="shortcut icon"
+      href="https://pitchmanpens.com/cdn/shop/files/Favicon_Letter_Pen.png?crop=center&height=32&v=1707778915&width=32"
+      type="image/x-icon"
+    />
+
+    <!-- link Box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link font awesone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- link HTML-slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- link HTML-slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- link JS -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/login.js"></script>
+    <script defer src="./js/cart.js"></script>
+    <script defer src="./js/shoppingcart.js"></script>
+    <script defer src="./js/register.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <!-- HEADER -->
+      <div class="header__bg">
+        <header class="header">
+          <!-- header left -->
+          <span class="header__logo">
+            <a class="header__toggle" id="menu">
+              <i class="bx bxs-grid-alt"></i>
+            </a>
+          </span>
+          <span class="header__center">
+            <a href="/Ecommerce-Website-Sneakers/home.html"
+              ><img
+                class="header__logo-img"
+                src="./img/logopicth.png"
+                alt="header logo"
+            /></a>
+            <!-- <a href="#" class="header__logo-title">Pitchman</a> -->
+          </span>
+
+          <!-- header right -->
+          <div class="header__right">
+            <ul class="header__nav" id="nav__show">
+              <li><a class="header__nav-link" href="#Home">Our Pens</a></li>
+              <li>
+                <a class="header__nav-link" href="#Featured"
+                  >Inks, Nibs, and Journal</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-link" href="#Women">Tycoon Collection</a>
+              </li>
+              <li>
+                <a class="header__nav-link" href="#Men">Closer Collection</a>
+              </li>
+              <!-- <li><a class="header__nav-link" href="#Shop">Shop</a></li> -->
+              <li>
+                <a class="header__nav-link" href="#Login" id="login">
+                  <i class="bx bxs-user"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- shop card -->
+            <div class="header__card" id="showCart">
+              <i style="position: relative" class="bx bxs-shopping-bag"></i>
+              <div
+                style="
+                  position: absolute;
+                  top: 12px;
+                  right: 16px;
+                  font-size: 14px;
+                  background: red;
+                  border-radius: 50%;
+                  width: 18px;
+                  height: 18px;
+                  color: #fff;
+                  text-align: center;
+                "
+                class="total-number"
+              >
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- About -->
+      <div class="about">
+        <div>
+          <h1 class="about__tilte">About Solstice Scribes</h1>
+
+          <p class="about__content">
+            OPULENT WRITING INSTRUMENTS HANDCRAFTED BY Solstice Scribes
+          </p>
+
+          <p style="margin-bottom: 10px" class="about__br1">
+            Solstice Scribes pens are individually handcrafted to exacting
+            standards, yet with subtle differences to ensure that each pen is
+            truly unique. <br> We think you will agree that your Solstice Scribes is the best
+            luxury pen on the market today and in a class all by itself.</p
+          >
+
+          <span style="margin-top: 20px" class="about__br2">
+            Solstice Scribes makes the finest writing instruments for discerning
+            top performing executives and sales professionals. Sophisticated and
+            exquisite, <br> bold and distinguished, Solstice Scribes Pens are the
+            embodiment of professional success and are the prized possessions of
+            their owners.
+          </span>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer section">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <a href="#" class="footer__logo">
+                <img src="./img/logopicth.png" alt="" class="footer__img" />
+                Solstice Scribes
+              </a>
+              <p class="footer__description">
+                New collection of shoes <br />
+                2023
+              </p>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Explore</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#Home" class="footer__link">Home</a>
+                </li>
+                <li>
+                  <a id="Featured" href="#Featured" class="footer__link"
+                    >Product</a
+                  >
+                </li>
+                <li>
+                  <a id="Women" href="/Ecommerce-Website-Sneakers/about.html" class="footer__link">About</a>
+                </li>
+                <li>
+                  <a id="Men" href="/Ecommerce-Website-Sneakers/contact.html" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Address</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#" class="footer__link">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13645.705068374467!2d72.87339365053693!3d19.11867565481781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c80f0c7a99ab%3A0xd79a3bf9f3cb31b0!2sPitchman%20Communications!5e1!3m2!1svi!2s!4v1731251928314!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Complaint Hotline: 093 466 4262</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Email: jim@pitchmanpens.com</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__social">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copy">
+          © 2023 coded by
+          <a style="color: #fff" href="#" target="_blank">Solstice Scribes</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

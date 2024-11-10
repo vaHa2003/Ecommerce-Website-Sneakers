@@ -788,7 +788,7 @@ html {
     font-size: 1.4rem;
   }
   .footer__container {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
     gap: 2rem;
   }
   .slick-next,
@@ -808,7 +808,7 @@ html {
     right: 40px !important;
   }
   .post__new-item {
-    padding: 10px !important;
+    padding: 20px !important;
   }
 }
 /* Tablet */

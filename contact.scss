@@ -1,0 +1,54 @@
+.contact {
+  max-width: 1400px;
+  padding: 90px 1rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  & h2{
+    margin-bottom: 10px;
+  }
+}
+
+.contact__container{
+    max-width: 1200px;
+    margin:0 auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+
+.form__contact{
+    margin-bottom: 10px;
+    & label{
+        font-weight: 500;
+    }
+    & input{
+        border: 1px solid #ccc;
+        font-family: "Montserrat Alternates", sans-serif !important;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    & input:focus{
+        outline: none;
+    }
+}
+
+.contact__right ul li{
+    list-style-type: none;
+    margin-bottom: 20px;
+
+    & .text-heading{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+
+form button{
+    font-family: "Montserrat Alternates", sans-serif !important;
+}
