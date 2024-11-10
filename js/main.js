@@ -1,3 +1,15 @@
+const btn_now = document.querySelectorAll("#btn-now");
+
+const productId = 123; // Thay 123 bằng ID sản phẩm bạn muốn hiển thị
+
+// Gắn sự kiện click vào nút
+btn_now.forEach((button) => {
+  button.addEventListener("click", function() {
+    const productId = button.getAttribute("data-product-id");
+    viewProductDetail(productId);
+  });
+});
+
 // ======== show & remove menu =====
 let menu = document.getElementById("menu");
 let menuShow = document.getElementById("nav__show");
@@ -51,28 +63,68 @@ let text2 = new Typed(".auto__textSlide3", {
 // =============  render view =============
 // Dữ liệu sản phẩm
 const products = [
-  { id: 1, name: "Tycoon Lustrous Tan Fountain Pen", price: "3.273.288", image: "./img/woman3.png" },
-  { id: 2, name: "Tycoon Signature Blue Rollerball Pen", price: "3.273.288", image: "./img/women1.png" },
-  { id: 3, name: "Tycoon Signature Blue Fountain Pen", price: "4.972.376", image: "./img/women2.png" },
-  { id: 4, name: "Tycoon Lustrous Tan Rollerball Pen", price: "2.000.000", image: "./img/women4.png" },
+  {
+    id: 1,
+    name: "Tycoon Lustrous Tan Fountain Pen",
+    price: "3.273.288",
+    image: "./img/woman3.png",
+  },
+  {
+    id: 2,
+    name: "Tycoon Signature Blue Rollerball Pen",
+    price: "3.273.288",
+    image: "./img/women1.png",
+  },
+  {
+    id: 3,
+    name: "Tycoon Signature Blue Fountain Pen",
+    price: "4.972.376",
+    image: "./img/women2.png",
+  },
+  {
+    id: 4,
+    name: "Tycoon Lustrous Tan Rollerball Pen",
+    price: "2.000.000",
+    image: "./img/women4.png",
+  },
 ];
 
 const menProducts = [
-  { id: 5, name: "Closer LUXE White Mother of Pearl Rollerball Pen", price: "2.490.000", image: "./img/men1.png" },
-  { id: 6, name: "Closer LUXE White Mother of Pearl Fountain Pen", price: "2.590.000", image: "./img/men2.png" },
-  { id: 7, name: "Closer LUXE Sapphire Abalone Shell Fountain Pen", price: "1.681.737", image: "./img/men3.png" },
-  { id: 8, name: "Closer LUXE Sapphire Abalone Shell Rollerball Pen", price: "3.390.000", image: "./img/men4.png" },
+  {
+    id: 5,
+    name: "Closer LUXE White Mother of Pearl Rollerball Pen",
+    price: "2.490.000",
+    image: "./img/men1.png",
+  },
+  {
+    id: 6,
+    name: "Closer LUXE White Mother of Pearl Fountain Pen",
+    price: "2.590.000",
+    image: "./img/men2.png",
+  },
+  {
+    id: 7,
+    name: "Closer LUXE Sapphire Abalone Shell Fountain Pen",
+    price: "1.681.737",
+    image: "./img/men3.png",
+  },
+  {
+    id: 8,
+    name: "Closer LUXE Sapphire Abalone Shell Rollerball Pen",
+    price: "3.390.000",
+    image: "./img/men4.png",
+  },
 ];
 
 // Lưu danh sách sản phẩm vào localStorage
-localStorage.setItem('products', JSON.stringify(products));
-localStorage.setItem('menProducts', JSON.stringify(menProducts));
+localStorage.setItem("products", JSON.stringify(products));
+localStorage.setItem("menProducts", JSON.stringify(menProducts));
 
 // Hàm render danh sách sản phẩm
 function renderProductList(containerId, productList) {
   const container = document.getElementById(containerId);
-  
-  productList.forEach(product => {
+
+  productList.forEach((product) => {
     const productHTML = `
       <div class="women__item">
         <p class="women__item-sale">Sale</p>
@@ -101,7 +153,6 @@ function renderProductList(containerId, productList) {
   });
 }
 
-
 // Hàm xử lý khi nhấn "Add to Cart" để xem chi tiết sản phẩm
 function viewProductDetail(productId) {
   // Chuyển hướng đến trang chi tiết sản phẩm
@@ -109,8 +160,9 @@ function viewProductDetail(productId) {
 }
 
 // Lấy dữ liệu từ localStorage
-const productsFromStorage = JSON.parse(localStorage.getItem('products')) || [];
-const menProductsFromStorage = JSON.parse(localStorage.getItem('menProducts')) || [];
+const productsFromStorage = JSON.parse(localStorage.getItem("products")) || [];
+const menProductsFromStorage =
+  JSON.parse(localStorage.getItem("menProducts")) || [];
 
 // Gọi hàm render cho cả hai danh sách sản phẩm
 renderProductList("product-list", productsFromStorage);
@@ -158,15 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
 // Hàm cập nhật số lượng sản phẩm trong giỏ hàng trên header
 function updateCartCount() {
-  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
   let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
-  
+
   // Tìm phần tử để hiển thị số lượng
-  const cartCountElement = document.querySelector('.total-number p');
+  const cartCountElement = document.querySelector(".total-number p");
   if (cartCountElement) {
     cartCountElement.textContent = totalQuantity;
   }

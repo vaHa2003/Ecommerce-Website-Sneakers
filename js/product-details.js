@@ -244,3 +244,8 @@ document.addEventListener("DOMContentLoaded", () => {
     logoutModal.style.display = "none";
   });
 });
+
+
+close.addEventListener("click", () => {
+  showModal.classList.remove("open");
+});

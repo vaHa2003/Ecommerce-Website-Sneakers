@@ -473,6 +473,7 @@ html {
             font-weight: 600;
             border: none;
             background-color: $color;
+            cursor: pointer;
             /* padding: 10px 20px; */
             display: flex;
             align-items: center;
@@ -509,6 +510,7 @@ html {
       width: 76px;
       height: 0.2rem;
       background-color: #333;
+      margin-top: 26px;
     }
     & .product__title {
       font-weight: 600;
@@ -827,6 +829,14 @@ html {
   }
   .logout-modal {
     padding: 0 10px;
+  }
+
+  .post__news_item-img {
+    top: 16px !important;
+    right: 40px !important;
+  }
+  .post__new-item{
+    padding: 10px !important;
   }
 }
 
