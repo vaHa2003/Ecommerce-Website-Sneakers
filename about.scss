@@ -6,19 +6,35 @@
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-  & .about__content{
+  & .about__content {
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 20px;
-    
   }
-  & .about__tilte{
+  & .about__tilte {
     margin-bottom: 40px;
   }
-  & .about__br1,  & .about__br2{
+  & .about__br1,
+  & .about__br2 {
     margin-top: 10px;
     margin-bottom: 30px;
     line-height: 30px;
+    text-indent: 20px;
+  }
+}
+
+.content__line {
+  margin-top: 10px;
+  & label {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
+  & p{
+    margin-top: 20px;
+    margin-bottom: 36px;
+    line-height: 28px;
+    text-indent: 20px;
+  }
 }

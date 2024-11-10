@@ -629,7 +629,7 @@ html {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  width: calc(100% - 3rem);
+  width: calc(100% - 2rem);
 }
 .container .footer__container {
   display: grid;

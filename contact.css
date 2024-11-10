@@ -1,6 +1,9 @@
+@charset "UTF-8";
 .contact {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   padding: 90px 1rem;
+  background: #000;
+  color: #fff;
   margin: 0 auto;
   display: grid;
   gap: 2rem;
@@ -11,7 +14,7 @@
 }
 
 .contact__container {
-  max-width: 1200px;
+  max-width: 500px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -29,7 +32,7 @@
   font-family: "Montserrat Alternates", sans-serif !important;
   border-radius: 10px;
   margin-top: 10px;
-  padding: 10px 10px;
+  padding: 14px 12px;
   width: 100%;
 }
 .form__contact input:focus {
@@ -47,4 +50,68 @@
 
 form button {
   font-family: "Montserrat Alternates", sans-serif !important;
+}
+
+form button:hover {
+  background-color: #ccc;
+}
+
+.faq-item h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.faq-item p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+  text-indent: 20px;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.faq-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Định dạng cho mỗi câu hỏi */
+.faq-item {
+  background-color: #f9f9f9;
+  padding: 15px 34px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+.faq-item:hover {
+  background-color: #e0e0e0;
+}
+.faq-item h3 {
+  position: relative;
+}
+.faq-item h3::before {
+  content: "+ ";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #008CBA;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=contact.css.map */

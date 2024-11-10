@@ -650,7 +650,7 @@ html {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  width: calc(100% - 3rem);
+  width: calc(100% - 2rem);
   & .footer__container {
     display: grid;
     grid-template-columns: repeat(4, max-content);
